@@ -1,0 +1,39 @@
+:root{
+    --main-clolor:blue;
+    --badge-clolor:red;
+    --space-unit:10px;
+
+}
+
+header{
+    background-color: var(--main-clolor);
+    padding: var(--space-unit);
+}
+.container{
+    padding:var(--space-unit);
+}
+.card{
+    padding: var(--space-unit);
+    color: var(--badge-clolor);
+}
+ch1{
+    color: var(--badge-clor);
+    background-color: var(--main-clolor);
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 18px;
+
+}
+.button{
+    background-color: var(--main-clolor);
+}
+.product-card {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: white;
+    
+}

@@ -1,0 +1,122 @@
+
+:root {
+    --main-color: #333;
+    --sale-color: red;
+    --text-color: #fff;
+    --bg-color: #f2f2f2;
+    --space: 20px;
+    --radius: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: var(--space);
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: var(--space);
+}
+
+.hero {
+    padding: 60px;
+    text-align: center;
+    background-color: #ddd;
+}
+
+.products {
+    padding: var(--space);
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: var(--space);
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space);
+}
+
+.card {
+    position: relative;
+    padding: var(--space);
+    background-color: var(--text-color);
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.card p {
+    margin: 10px;
+}
+
+.card button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: var(--radius);
+}
+
+.sale {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    padding: 5px;
+    background-color: var(--sale-color);
+    color: var(--text-color);
+}
+
+.heart {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    padding: 5px;
+    background-color: var(--text-color);
+    color: var(--sale-color);
+}
+
+.back-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+
+    padding: 15px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 50%;
+}
